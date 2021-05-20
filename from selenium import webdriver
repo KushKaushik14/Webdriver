@@ -1,0 +1,17 @@
+from selenium import webdriver 
+from getpass import getpass
+
+username = input("Enter in your username: ")
+password = getpass("Enter your password")
+
+driver = webdriver.chrome("C:\\WebDriver\\chromedriver")
+driver.get("https://www.instagram.com/")
+
+username_textbox = driver.find_element_by_id("Phone number, username, or email")
+username_textbox.send_keys(username)
+
+password_textbook = driver.find_element_by_id("password")
+password.send_keys(password)
+
+login_button = driver.find_element_by_id("Igw0E     IwRSH      eGOV_         _4EzTm    bkEs3                          CovQj                  jKUp7          DhRcB")
+login_button.submit()
